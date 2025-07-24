@@ -78,7 +78,7 @@ export default function RootLayout() {
         <Tab.Screen
           name="calendar"
           component={CalendarScreen}
-          options={{ title: "설정" }}
+          options={{ title: "캘린더" }}
         />
         <Tab.Screen
           name="settings"
