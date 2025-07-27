@@ -14,7 +14,6 @@ import { Appearance, Platform } from "react-native";
 import { NAV_THEME } from "~/lib/constants";
 import { useColorScheme } from "~/lib/useColorScheme";
 import { PortalHost } from "@rn-primitives/portal";
-import { ThemeToggle } from "~/components/ThemeToggle";
 import { setAndroidNavigationBar } from "~/lib/android-navigation-bar";
 
 import SettingsScreen from "~/app/settings";
@@ -53,7 +52,7 @@ export default function RootLayout() {
 
       <Tab.Navigator
         screenOptions={({ route }) => ({
-          headerRight: () => <ThemeToggle />,
+          headerTitleAlign: "left",
           tabBarIcon: ({ color, size }) => {
             let iconName;
             if (route.name === "index") {
